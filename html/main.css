@@ -1,0 +1,29 @@
+#heading {
+    color: red;
+    font-size: 100px;
+}
+#heading:hover{
+    color: black;
+}
+.second {
+    color: green;
+    font-size: 20px;
+}
+li {
+    color: yellowgreen;
+}
+html {
+    color:blueviolet;
+}
+
+/* đặt biến */
+:root{
+    --text-color: black;
+}
+h2{
+    color: var(--text-color);
+}
+.first-heading {
+    width: 500px;
+    height: 500px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <!-- Phần Đầu -->
+    <!-- 
+        1.h1-h6 :dùng để viết tiêu đề
+        2.p:dùng để viết đoạn chữ
+        3.img:dùng hiển thị hình ảnh
+        4.a: dùng để liên kết các trang vs nhau
+        5. ul,li,ol(hiện số):dùng để hiển thị nhừng dạng danh sách
+        6.table:dùng để kẻ bảng
+        7.input:dùng lm các type nhập chữ hoặc đánh dấu
+        8.button:dùng để sinh ra những nút
+        9.div:tạo ra những khối bao quanh
+        10.width là chiều rộng,height là chiều cao
+    -->
+    <head>
+        <title >F8-Shop</title>
+        <meta charset="utf-8">
+
+        <!-- liên kết đến file main.css -->
+        <link rel="stylesheet" href="main.css"> 
+        <style>
+          .box {
+            width: 10%;
+            height: 100px;
+            background-color: rgb(9, 236, 187);
+           }
+          .box::before{
+            content:"" ;
+            display: block;
+            width: 50px;
+            height: 50px; 
+            background-color: #f90d0d;
+           }
+           .box::after{
+            content:"box2" ;
+            display: block;
+            width: 50px;
+            height: 50px; 
+            background-color: #fff;
+           }
+            h1:hover {
+                color: black;
+            }
+            li:first-child{
+                color: rgb(151, 44, 44);
+                font-size: 40px;
+            }
+            
+            h1::first-letter{
+                color:blue
+            }
+
+            h1::selection{
+                background-color: violet;
+                color: #fff;
+            } 
+            .box1 {
+                background-color: firebrick;
+                padding: 10px;
+                border: 1px solid #000000;
+                margin: 20px ;
+                width: 100px;
+                height: 100px;
+                 box-sizing: border-box;
+            }
+            .header{
+                width: 10%;
+                height: 10vh;
+                background-image: url(https://vapa.vn/wp-content/uploads/2022/12/anh-cute-001-1.jpg);
+                background-size: 100px;
+                background-repeat: no-repeat;
+            }
+              
+            
+           
+        </style>
+    </head>
+
+    <!-- Phần Thân-->
+    <body>
+       <div>
+        <div class="box"></div>
+        <div class="box box1"></div>
+        <div class="header"></div>
+        <h1 id="heading" title="đây là tiêu đề">Hello <br /> dong thu 2 </h1>
+        <h2>VietNamVoDich</h2>
+
+        <button>Đăng ký</button>
+
+        <input type="text">
+        <input type="checkbox">
+        <input type="radio">
+        <p class="second">xinchao</p>
+        <img class="first-heading" src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.15752-9/344477331_225190336814303_119861456878896123_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=fEZn48KubKIAX_7BxEQ&_nc_ht=scontent.fhan14-2.fna&oh=03_AdTc1FQDK98nsHl_SWg0TgD1j-R9-sNRuGuSttAh7Yw_NA&oe=64848FF1" alt="Ảnh Mu">
+        <a href="https://www.facebook.com/">tới trang Facebook</a>
+
+        <ul>
+            <li>HTML,CSS là gì?</li>
+            <li>Cài đặt môi trường</li>
+        </ul>
+        <table>
+            <thead>
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Địa Chỉ</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Agnes</td>
+                    <td>Bắc Ninh</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Chí Thanh</td>
+                    <td>Hưng Yên</td>
+                </tr>
+            </tbody>
+        </table>
+       </div>
+    </body>
+</html>
